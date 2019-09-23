@@ -226,6 +226,11 @@ address,caption,cite,code,dfn,th,var {
 	font-style:normal;
 	font-weight:normal;
 }
+
+p{
+  color: darkgrey;
+}
+
 caption,th { text-align:left;}
 q:before,q:after { content:'';}
 abbr,acronym { border:0;} 
