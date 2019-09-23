@@ -3609,6 +3609,10 @@ img, video {
   }
 }
 
+a{
+  color: darkgrey !important;
+}
+
 /* #FEATURES 15 WE ARE CREATIVE #NEW-2
 =====================================================*/
 .fes15-title-40 {
