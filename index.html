@@ -1,668 +1,385 @@
-<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+<title>Reddit</title>
 
+<style type="text/css">
 
-<html lang="en">
- 	<head>
+div, p, a, li, td { -webkit-text-size-adjust:none; }
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148506662-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+.ReadMsgBody
+{width: 100%; background-color: #ffffff;}
+.ExternalClass
+{width: 100%; background-color: #ffffff;}
+body{width: 100%; height: 100%; background-color: #ffffff; margin:0; padding:0; -webkit-font-smoothing: antialiased;}
+html{width: 100%;}
 
-  gtag('config', 'UA-148506662-1');
-</script>
-		<title>Mountain Photography</title>
-		<meta charset="utf-8">
-		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-		<meta name="robots" content="index, follow" > 
-		<meta name="keywords" content="HTML5" > 
-		<meta name="description" content="This is a website for CS40." > 
-		<meta name="author" content="Simon Alexander">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="theme-color" content="#2a2b2f">
+@font-face {
+    font-family: 'proxima_novalight';src: url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-light-webfont.eot');src: url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-light-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-light-webfont.ttf') format('truetype');font-weight: normal;font-style: normal;}
+
+@font-face {
+    font-family: 'proxima_nova_rgregular'; src: url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-regular-webfont.eot');src: url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-regular-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-regular-webfont.ttf') format('truetype');font-weight: normal;font-style: normal;}
+
+@font-face {
+    font-family: 'proxima_novasemibold';src: url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-semibold-webfont.eot');src: url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-semibold-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-semibold-webfont.ttf') format('truetype');font-weight: normal;font-style: normal;}
     
-		<!-- FAVICONS -->
-    <link rel="shortcut icon" href="images/favicon/favicon.png">
-    <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png">
-    <link rel="icon" sizes="192x192" href="images/favicon/icon-192x192.png">
+@font-face {
+	font-family: 'proxima_nova_rgbold';src: url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-bold-webfont.eot');src: url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-bold-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-bold-webfont.ttf') format('truetype');font-weight: normal;font-style: normal;}
+	
+@font-face {
+    font-family: 'proxima_novablack';src: url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-black-webfont.eot');src: url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-black-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-black-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-black-webfont.ttf') format('truetype');font-weight: normal;font-style: normal;}
+
+
+
+p {padding: 0!important; margin-top: 0!important; margin-right: 0!important; margin-bottom: 0!important; margin-left: 0!important; }
+
+.hover:hover {opacity:0.85;filter:alpha(opacity=85);}
+
+.fullImage img {width: 600px; height: auto; text-align: center; }
+.img254 img {width: 265px!important; height: auto!important; text-align: center!important; clear: both; }
+.image180 img {width: 180px; height: 180px; border-radius: 100%!important;}
+.image142 img {width: 142px; height: 142px; border-radius: 100%!important;}
+.image188 img {width: 188px; height: 188px; border-radius: 100%!important;}
+.bigImage img {width: 600px; height: auto; border-radius: 5px!important;}
+.small_img1 img {width: 101px; height: auto;}
+.socialIcons img {width: 16px!important;}
+.logo img {width: 110px;}
+
+</style>
+
+
+<!-- @media only screen and (max-width: 640px) 
+		   {*/
+		   -->
+<style type="text/css"> @media only screen and (max-width: 640px){
+		body{width:auto!important;}
+		table[class=full] {width: 100%!important; clear: both; }
+		table[class=mobile] {width: 100%!important; padding-left: 20px; padding-right: 20px; clear: both; }
+		table[class=fullCenter] {width: 100%!important; text-align: center!important; clear: both; }
+		td[class=fullCenter] {width: 100%!important; text-align: center!important; clear: both; }
+		.erase {display: none;}
+		table[class=fullImage] {width: 100%!important; height: auto!important; text-align: center!important; clear: both; }
+		.fullImage img {width: 100%!important; height: auto!important; text-align: center!important; clear: both; }
+		table[class=image180] {width: 100%!important; text-align: center!important;}
+		table[class=image142] {width: 100%!important; text-align: center!important;}
+		table[class=small_img1] {width: 100%!important; text-align: center!important;}
+		table[class=bigImage] {width: 100%!important; text-align: center!important;}
+		.bigImage img {width: 100%!important; text-align: center!important; border-radius: 5px;}
+		table[class=image188] {width: 100%!important; text-align: center!important;}
+		table[class=img254] {width: 100%!important; height: auto!important; text-align: center!important; clear: both; }
+		.img254 img {width: 254px!important; height: auto!important; text-align: center!important; clear: both; }
+		td[class=h15] {height: 15px!important;}
+		.buttonPad {padding-left: 20px!important; padding-right: 20px!important;}
+		.nbsp {display: none;}
+		.floatCenter {text-align: center!important; float: center!important; }
 		
-<!-- CSS -->
-    <!--  GOOGLE FONT -->		
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
-    
-    <!-- REVOSLIDER CSS SETTINGS -->
-    
-    <!-- REVOLUTION STYLE SHEETS -->
-    <link href="revo-slider/css/settings.css" rel="stylesheet" type="text/css">
-    
-    <!--  BOOTSTRAP -->
-		<link rel="stylesheet" href="css/bootstrap.min.css"> 
-	
-    <!-- ICONS ELEGANT FONT & FONT AWESOME & LINEA ICONS  -->		
-		<link rel="stylesheet" href="css/icons-fonts.css" >	
-	
-    <!--  CSS THEME -->		
-		<link rel="stylesheet" href="css/style.css" >
-	
-    <!-- ANIMATE -->	
-		<link rel='stylesheet' href="css/animate.min.css">
-		
-    <!-- IE Warning CSS -->
-		<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie-warning.css" ><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie8-fix.css" ><![endif]-->
-    
-    <!-- Magnific popup, Owl Carousel Assets in style.css -->		
-	
-<!-- CSS end -->
+} </style>
+<!--
 
-<!-- JS begin some js files in bottom of file-->
-		
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
-		
-	</head>
-	<body class="font-raleway">
-
-    <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
-	
-		<!-- LOADER -->	
-		<div id="loader-overflow">
-      <div id="loader3" class="loader-cont">Please enable JS</div>
-    </div>	
-
-		<div id="wrap" class="boxed ">
-			<div class="grey-bg"> <!-- Grey BG  -->	
+@media only screen and (max-width: 479px) 
+		   {
+		   -->
+<style type="text/css"> @media only screen and (max-width: 479px){
+		body{width:auto!important;}
+		table[class=full] {width: 100%!important; clear: both; }
+		table[class=mobile] {width: 100%!important; padding-left: 20px; padding-right: 20px; clear: both; }
+		table[class=fullCenter] {width: 100%!important; text-align: center!important; clear: both; }
+		td[class=fullCenter] {width: 100%!important; text-align: center!important; clear: both; }
+		.erase {display: none;}
+		img[class=fullImage] { width: 100%!important; height: auto!important; }
+		table[class=fullImage] {width: 100%!important; height: auto!important; text-align: center!important; clear: both; }
+		.fullImage img {width: 100%!important; height: auto!important; text-align: center!important; clear: both; }
+		table[class=image180] {width: 100%!important; text-align: center!important;}
+		table[class=image142] {width: 100%!important; text-align: center!important;}
+		table[class=small_img1] {width: 100%!important; text-align: center!important;}
+		table[class=bigImage] {width: 100%!important; text-align: center!important;}
+		.bigImage img {width: 100%!important; text-align: center!important; border-radius: 5px;}
+		table[class=image188] {width: 100%!important; text-align: center!important;}
+		table[class=img254] {width: 100%!important; height: auto!important; text-align: center!important; clear: both; }
+		.img254 img {width: 254px!important; height: auto!important; text-align: center!important; clear: both; }
+		td[class=h15] {height: 15px!important;}
+		.buttonPad {padding-left: 20px!important; padding-right: 20px!important;}
+		.nbsp {display: none;}
+		.floatCenter {text-align: center!important; float: center!important;}
 				
-				<!--[if lte IE 8]>
-				<div id="ie-container">
-					<div id="ie-cont-close">
-						<a href='#' onclick='javascript&#058;this.parentNode.parentNode.style.display="none"; return false;'><img src='images/ie-warn/ie-warning-close.jpg' style='border: none;' alt='Close'></a>
-					</div>
-					<div id="ie-cont-content" >
-						<div id="ie-cont-warning">
-							<img src='images/ie-warn/ie-warning.jpg' alt='Warning!'>
-						</div>
-						<div id="ie-cont-text" >
-							<div id="ie-text-bold">
-								You are using an outdated browser
-							</div>
-							<div id="ie-text">
-								For a better experience using this site, please upgrade to a modern web browser.
-							</div>
-						</div>
-						<div id="ie-cont-brows" >
-							<a href='http://www.firefox.com' target='_blank'><img src='images/ie-warn/ie-warning-firefox.jpg' alt='Download Firefox'></a>
-							<a href='http://www.opera.com/download/' target='_blank'><img src='images/ie-warn/ie-warning-opera.jpg' alt='Download Opera'></a>
-							<a href='http://www.apple.com/safari/download/' target='_blank'><img src='images/ie-warn/ie-warning-safari.jpg' alt='Download Safari'></a>
-							<a href='http://www.google.com/chrome' target='_blank'><img src='images/ie-warn/ie-warning-chrome.jpg' alt='Download Google Chrome'></a>
-						</div>
-					</div>
-				</div>
-				<![endif]-->
-				
-				<!-- HEADER 1 FONT WHITE TRANSPARENT -->
-        <div class="header-black-bg"></div> <!-- NEED FOR TRANSPARENT HEADER ON MOBILE -->
-				<header id="nav" class="header header-1 header-black">
-				  <div class="header-wrapper">
-					<div class="container-m-30 clearfix">
-					  <div class="logo-row">
-					  
-						<!-- LOGO --> 
-						<div class="logo-container-2">
-                <div class="logo-2">
-                 <!--  <a href="index.html" class="clearfix">
-                    <img src="images/logo-white.png" class="logo-img" alt="Logo">
-                  </a> -->
-                </div>
-              </div>
-						<!-- BUTTON --> 
-						<div class="menu-btn-respons-container">
-							<button id="menu-btn" type="button" class="navbar-toggle btn-navbar collapsed" data-toggle="collapse" data-target="#main-menu .navbar-collapse">
-								<span aria-hidden="true" class="icon_menu hamb-mob-icon"></span>
-							</button>
-						</div>
-					 </div>
-					</div>
-
-					<!-- MAIN MENU CONTAINER -->
-					<div class="main-menu-container">
-						
-						  <div class="container-m-30 clearfix">	
-						  
-								<!-- MAIN MENU -->
-								<div id="main-menu" class="font-raleway">
-								  <div class="navbar navbar-default" role="navigation">
-
-                    <!-- MAIN MENU LIST -->
-                    <nav class="collapse collapsing navbar-collapse right-1024">
-                      <ul class="nav navbar-nav">
-                        
-                        <!-- MENU ITEM -->
+		}
+} </style>
 
 
-                        <li class="parent current" >
-                          <a href="#" ><div class="main-menu-title" style = "font-family: 'Shadows Into Light' !important; font-size: 21px;" >Home</div></a>
-                         
-                        </li>
-                         <li class="parent current" >
-                          <a href="https://github.com/mikeizbicki/cmc-csci040" ><div class="main-menu-title" style = "font-family: 'Shadows Into Light' !important; font-size: 21px;" >Check Out CS40</div></a>
-                         
-                        </li>
-                         <li class="parent current" >
-                          <a href="https://izbicki.me/" ><div class="main-menu-title" style = "font-family: 'Shadows Into Light' !important; font-size: 21px;" >Follow Professor Mike Izbicki</div></a>
-                         
-                        </li>
 
-                        <li class="parent current" >
-                          <a href="faq.html" ><div class="main-menu-title" style = "font-family: 'Shadows Into Light' !important; font-size: 21px;" >Random Mountain Facts</div></a>
-                         
-                        </li>
-
-                        <li class="parent current" >
-                          <a href="sources.html" ><div class="main-menu-title" style = "font-family: 'Shadows Into Light' !important; font-size: 21px;" >Sources for Photos</div></a>
-                         
-                        </li>
-
-                        <!-- MENU ITEM -->
-                       
-                        
-                       
-
-                        <!-- MENU ITEM -->
-                       
-                        
-                        			
-                                              
-                        <!-- MENU ITEM -->
-                      
-                      
-                      </ul>
-                
-                    </nav>
-   
-								  </div>
-								</div>
-								<!-- END main-menu -->
-								
-						  </div>
-						  <!-- END container-m-30 -->
-						
-					</div>
-					<!-- END main-menu-container -->
+<!-- Wrapper 1 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" >
+	<tr>
+		<td width="100%" valign="top" bgcolor="#6998a0"style="background-color: rgb(105, 152, 160); ">
+		
+		
+			<!-- Nav Mobile Wrapper -->
+			<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
+				<tr>
+					<td width="100%">
 					
-					<!-- SEARCH READ DOCUMENTATION -->
-				
-					<div id="cd-search" class="cd-search">
-						<form class="form-search" id="searchForm" action="page-search-results.html" method="get">
-							<input type="text" value="" name="q" id="q" placeholder="Search...">
-						</form>
-					</div>
-					
-				  </div>
-				  <!-- END header-wrapper -->
-				  
-				</header>
-       
-        <!-- SLIDER Revo Hero 1  -->
-        <div class="relative">
-
-            <div class="rev_slider_wrapper fullscreen-container" id="rev_slider_280_1_wrapper" style="background-color:#000;padding:0px;">
-                <!-- START REVOLUTION SLIDER 5.1.4 fullscreen mode -->
-                <div class="rev_slider fullscreenbanner" data-version="5.1.4" id="rev_slider_280_1" style="display:none;">
-                    <ul>
-                        <!-- SLIDE  -->
-                        <li data-index="rs-673" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="https://cdn.pixabay.com/photo/2015/05/08/08/49/mountains-757731_1280.jpg" data-rotate="0" data-saveperformance="off" data-title="" data-description="">
-                            <!-- MAIN IMAGE -->
-                            <img src="images/revo-slider/dummy.png" data-lazyload="https://cdn.pixabay.com/photo/2015/05/08/08/49/mountains-757731_1280.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-                            <!-- LAYERS -->
-
-                            <!-- BACKGROUND VIDEO LAYER -->
-                            <div class="rs-background-video-layer" data-forcerewind="on" data-volume="mute" data-videowidth="100%" data-videoheight="100%" data-videomp4="video/m.mp4" data-videopreload="preload" data-videoloop="loop" data-autoplay="true" data-autoplayonlyfirsttime="false" data-nextslideatend="true"></div>
-
-                            <!-- LAYER NR. 1 -->
-                            <div class="tp-caption   tp-resizeme rs-parallaxlevel-9" id="slide-696-layer-1" 
-                            data-x="['center','center','center','center']" 
-                            data-hoffset="['0','0','0','0']" 
-                            data-y="['middle','middle','middle','middle']" 
-                            data-voffset="['0','0','0','0']" 
-                            data-width="none" 
-                            data-height="none" 
-                            data-whitespace="nowrap" 
-                            
-                            data-type="image" 
-                            data-responsive_offset="on" 
-
-                            data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":1850,"ease":"Power4.easeInOut"},{"delay":"wait","speed":500,"to":"rZ:0deg;sX:0.7;sY:0.7;opacity:0;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Back.easeIn"}]'
-                            data-textAlign="['left','left','left','left']"
-                            data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]"
-                            data-paddingbottom="[0,0,0,0]"
-                            data-paddingleft="[0,0,0,0]"
-
-                            style="z-index: 7;">
-                                <div class="rs-looped rs-pulse" data-easing="Power1.easeInOut" data-speed="3" data-zoomstart="0.98" data-zoomend="1"><img src="images/revo-slider/dummy.png" alt="" width="1400" height="1200" data-ww="['700px','700px','700px','350']" data-hh="['350px','350px','350px','300']" data-lazyload="images/a99.png" data-no-retina>
-                                </div>
-                            </div>
-
-                        </li>
-                    </ul>
-                    <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
-                </div>
-            </div>
-            <!-- END REVOLUTION SLIDER -->
-
-          <!-- SCROLL ICON -->
-          <div class="local-scroll-cont font-white">
-            <a href="#about" class="scroll-down smooth-scroll">
-              <div class="icon icon-arrows-down"></div>
-            </a>  
-          </div>
-          
-        </div>
-
-        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-        
-        <!-- SLOGAN 2 FONT RALEWAY -->
-        <div id="about" class="p-140-cont">
-        	<div class="container">
-        		<div>
-              <h1 style = "text-align: center;">Hello.</h1>
-
-        			<h3 class="sl2-text font-raleway" style = "font-size: 23px; font-family: 'Shadows Into Light' !important;">"Here are some of my favorite photos. These include both my own and some I've seen from other photographers. I hope you enjoy!"<br>-Simon <br><div class="fb-like" data-href="https://studentsimon.github.io" data-width="" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div></h3>
-        		</div>
-        	</div>
-        </div>
-        
-        <!-- PORTFOLIO 3 (2 COLS, MASONRY) FONT RALEWAY -->
-        <div class="page-section">
-          <div class="relative">
-            
-            <!-- ITEMS GRID -->
-            <ul class="port-grid port-grid-2 masonry clearfix" id="items-grid">
-              
-              <!-- Item -->
-             
-                                           
-              <!-- Item big -->
-            
-                             
-              <!-- Item big -->
-              <li class="port-item mix photography">
-                <a href="info.html">
-                  <div class="port-img-overlay">
-                    <img class="port-main-img" src="https://cdn.pixabay.com/photo/2015/05/08/08/49/mountains-757731_1280.jpg" alt="img" >
-                  </div>
-                  <div class="port-overlay-cont">
-                    <div class="port-title-cont2">
-                      <!-- <h3 class="font-26 font-raleway">Spacesuit</h3>
-                      <span>photography</span> -->
-                    </div>
-                  </div>
-                </a>
-              </li>
-
-               <li class="port-item mix photography">
-                <a href="info.html">
-                  <div class="port-img-overlay">
-                    <img class="port-main-img" src="https://cdn.pixabay.com/photo/2014/10/07/13/48/mt-fuji-477832__480.jpg" alt="Mountain Image" >
-                  </div>
-                  <div class="port-overlay-cont">
-                    <div class="port-title-cont2">
-                      <!-- <h3 class="font-26 font-raleway">Spacesuit</h3>
-                      <span>photography</span> -->
-                    </div>
-                  </div>
-                </a>
-              </li> 
-
-               <li class="port-item mix photography">
-                <a href="info.html">
-                  <div class="port-img-overlay">
-                    <img class="port-main-img" src="https://cdn.pixabay.com/photo/2017/03/15/13/27/rough-horn-2146181__480.jpg" alt="img" >
-                  </div>
-                  <div class="port-overlay-cont">
-                    <div class="port-title-cont2">
-                      <!-- <h3 class="font-26 font-raleway">Spacesuit</h3>
-                      <span>photography</span> -->
-                    </div>
-                  </div>
-                </a>
-              </li>
-
-               <li class="port-item mix photography">
-                <a href="info.html">
-                  <div class="port-img-overlay">
-                    <img class="port-main-img" src="https://cdn.pixabay.com/photo/2017/01/16/19/40/mountains-1985027__480.jpg" alt="img" >
-                  </div>
-                  <div class="port-overlay-cont">
-                    <div class="port-title-cont2">
-                      <!-- <h3 class="font-26 font-raleway">Spacesuit</h3>
-                      <span>photography</span> -->
-                    </div>
-                  </div>
-                </a>
-              </li>
-
-              <li class="port-item mix photography">
-                <a href="info.html">
-                  <div class="port-img-overlay">
-                    <img class="port-main-img" src="https://cdn.pixabay.com/photo/2016/08/09/21/54/yellowstone-national-park-1581879__480.jpg" alt="img" >
-                  </div>
-                  <div class="port-overlay-cont">
-                    <div class="port-title-cont2">
-                      <!-- <h3 class="font-26 font-raleway">Spacesuit</h3>
-                      <span>photography</span> -->
-                    </div>
-                  </div>
-                </a>
-              </li>
-
-              <li class="port-item mix photography">
-                <a href="info.html">
-                  <div class="port-img-overlay">
-                    <img class="port-main-img" src="https://cdn.pixabay.com/photo/2015/07/27/17/14/switzerland-862870__480.jpg" alt="img" >
-                  </div>
-                  <div class="port-overlay-cont">
-                    <div class="port-title-cont2">
-                      <!-- <h3 class="font-26 font-raleway">Spacesuit</h3>
-                      <span>photography</span> -->
-                    </div>
-                  </div>
-                </a>
-              </li>
-
-
- 
-              <!-- Item big -->
-             
-
-              <!-- Item -->
-           
-  
-            </ul>
-          
-          </div>
-        </div>
-        
-        <!-- VIEW MORE PROJECTS  -->
-       
-        <!-- END PORTFOLIO SECTION -->
-        
-				<!-- FEATURES 13 OUR SERVICES FONT RALEWAY -->
-				<div class="page-section pt-160-b-120-cont">
-					<div class="container">
-            <div class="row">
-            
-              <div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="fes4-box wow fadeIn">
-								  <h2 class="section-title2 font-raleway">This Project</h2>
-
-								</div>
-							</div>            
-							<div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="fes4-box wow fadeIn" data-wow-delay="200ms">
-								  <div class="fes13-title-cont" >
-								  	<div class="fes13-box-icon">
-								  		<div class="icon icon-basic-settings"></div>
-								  	</div>
-								  	<h3 class="font-raleway">Tools</h3>
-								  </div>
-								  <div>
-								  Most of the development for this site took place on Sublime Text.
-								  </div>
-								</div>
-							</div>
-              <div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="fes4-box wow fadeIn" data-wow-delay="400ms">
-								  <div class="fes13-title-cont" >
-								  	<div class="fes13-box-icon">
-								  		<div class="icon icon-basic-share"></div>
-								  	</div>
-								  	<h3 class="font-raleway">Web Optimization</h3>
-								  </div>
-								  <div>
-								    We employeed web optimization techniques taught by Professor Izbicki.
-								  </div>
-								</div>
-							</div>
-              
-						</div>
-						<div class="row">
-            
-              <div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="fes4-box wow fadeIn" data-wow-delay="600ms">
-								  <div class="fes13-title-cont" >
-								  	<div class="fes13-box-icon">
-								  		<div class="icon icon-basic-target"></div>
-								  	</div>
-								  	<h3 class="font-raleway">HTML</h3>
-								  </div>
-								  <div>
-								    This project implements elements of HTML that were taught in the course.
-								  </div>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="fes4-box wow fadeIn" data-wow-delay="800ms" >
-								  <div class="fes13-title-cont" >
-								  	<div class="fes13-box-icon">
-								  		<div class="icon icon-basic-globe"></div>
-								  	</div>
-								  	<h3 class="font-raleway">Web Design</h3>
-								  </div>
-								  <div>
-								   I wanted to play with some new elements and create a unique webpage!
-								  </div>
-								</div>
-							</div>
-              <div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="fes4-box wow fadeIn" data-wow-delay="1000ms">
-								  <div class="fes13-title-cont" >
-								  	<div class="fes13-box-icon">
-								  		<div class="icon icon-basic-picture"></div>
-								  	</div>
-								  	<h3 class="font-raleway">Photography</h3>
-								  </div>
-								  <div>
-								    Photography was sourced from a variety of internet sources with royalty-free images.
-								  </div>
-								</div>
-							</div>              
+						<!-- Start Nav -->
+						<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+							<tr>
+								<td width="100%" height="10"></td>
+							</tr>
+							<tr>
+								<td width="100%" valign="middle" class="logo">
+									
+									<!-- Logo -->
+									<table width="150" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter">
+										<tr>
+											<td height="60" valign="middle" width="100%" style="text-align: left;" class="fullCenter">
+												<a href="#" ><img width="110" src="images/logo.png" alt="" border="0" ></a>
+											</td>
+										</tr>
+									</table>
+									
+									<!-- Nav --> 
+									<table width="400" border="0" cellpadding="0" cellspacing="0" align="right" style="text-align: right; font-size: 12px; letter-spacing: 1px; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter">	
+										<tr>
+											<td height="60" valign="middle" width="33%"  style="font-family: Helvetica, Arial, sans-serif; color: rgb(255, 255, 255); text-transform: uppercase; ">
+												<a href="#" style="text-decoration: none; color: rgb(255, 255, 255); "><!--[if !mso]><!--><span style="font-family: 'proxima_novasemibold', Helvetica;"><!--<![endif]--><!--[if !mso]><!--></span><!--<![endif]--></a>
+											</td>
+											<td valign="middle" width="33%"  style="font-family: Helvetica, Arial, sans-serif; color: rgb(255, 255, 255); text-transform: uppercase; ">
+												<a href="#" style="text-decoration: none; color: rgb(255, 255, 255); "><!--[if !mso]><!--><span style="font-family: 'proxima_novasemibold', Helvetica;"><!--<![endif]--><!--[if !mso]><!--></span><!--<![endif]--></a>
+											</td>
+											<td valign="middle" width="33%"  style="font-family: Helvetica, Arial, sans-serif; color: rgb(255, 255, 255); text-transform: uppercase; ">
+												<a href="#" style="text-decoration: none; color: rgb(255, 255, 255); "><!--[if !mso]><!--><span style="font-family: 'proxima_novasemibold', Helvetica;"><!--<![endif]-->Simon Alexander<!--[if !mso]><!--></span><!--<![endif]--></a>
+											</td>
+										</tr>
+									</table>
+																	
+								</td>
+							</tr>
+							<tr>
+								<td width="100%" height="10"></td>
+							</tr>
+						</table><!-- End Nav -->
 						
-            </div>
-					</div>
-				</div>
-
-				<!-- WORK PROCESS 2 FONT RALEWAY -->
-				<div class="container-fluid p-110-cont bg-gray">
-					<div class="row">
-          
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="work-proc2-cont wow fadeIn">
-                <div class="work-proc2-icon-cont pos-l-12">
-                  01
-                </div>
-                <h3 class="font-raleway"><strong>Laying out the site</strong></h3>
-                <p>Spent time thinking about what design I wanted to play with.</p>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="work-proc2-cont wow fadeIn" data-wow-delay="200ms">
-                <div class="work-proc2-icon-cont">
-                  02
-                </div>
-                <h3 class="font-raleway"><strong>Photography</strong></h3>
-                <p>Searched for optimal photos that fit the theme of the site.</p>
-              </div>
-            </div>
- 
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="work-proc2-cont wow fadeIn" data-wow-delay="400ms">
-                <div class="work-proc2-icon-cont">
-                  03
-                </div>
-                <h3 class="font-raleway"><strong>Development</strong></h3>
-                <p>Developing the site to look as good as possible.</p>
-              </div>
-            </div> 
-
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="work-proc2-a-cont wow fadeIn" data-wow-delay="600ms">
-                <a class="work-proc2-a" href="#">
-                  <div class="work-proc2-a-text font-raleway">
-                    Site<br><span class="border-bot">launched.</span>
-                  </div>
-                  <div class="work-proc2-bg-block"></div>
-                </a>
-              </div>
-            </div>
-            
-          </div>
-				</div>
-
-        <!-- SLOGAN 1 -->
-        
-        
-        <!-- FOOTER 4 BLACK FONT RALEWAY -->
-        <footer id="footer4" class="page-section pt-95 pb-50 footer2-black">
-          <div class="container">
-            
-            <a href="http://cmoffatt21.github.io">Some Link</a>
-            <a href="http://ldhillon21.github.io">Some Link</a>
-            <a href="https://kossklob.github.io/">Some Link</a>
-            <!-- SUB FOOTER -->
-            <div class="footer2-copy-cont clearfix">
-              <!-- Social Links -->
-             <!--  <div class="footer2-soc-a right">
-                <a href="https://1.envato.market/a1gQR" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a href="https://1.envato.market/a1gQR" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-                <a href="https://www.behance.net/abcgomel" title="Behance" target="_blank"><i class="fa fa-behance"></i></a>
-                <a href="https://1.envato.market/a1gQR" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="https://dribbble.com/abcgomel" title="Dribbble" target="_blank"><i class="fa fa-dribbble"></i></a>
-              </div> -->
-              
-              <!-- Copyright -->
-              <div class="left">
-                <a class="footer2-copy" href="https://1.envato.market/a1gQR" target="_blank">&copy; Simon, 2019</a>
-              </div>
-
-            </div>
-                    
-          </div>
-        </footer>
-        
-				<!-- BACK TO TOP -->
-				<p id="back-top">
-          <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
-        </p>
-        
-			</div><!-- End BG -->	
-		</div><!-- End wrap -->	
+					</td>
+				</tr>
+			</table><!-- End Nav Mobile Wrapper -->
 			
-<!-- JS begin -->
+			
+		</td>
+	</tr>
+</table><!-- End Wrapper 1 -->
 
-		<!-- jQuery  -->
-		<script src="js/jquery.min.js"></script>
-
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>		
-
-		<!-- MAGNIFIC POPUP -->
-		<script src='js/jquery.magnific-popup.min.js'></script>
-    
-    <!-- PORTFOLIO SCRIPTS -->
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    
-    <!-- APPEAR -->    
-    <script src="js/jquery.appear.js"></script>
-  
-    <!-- MAIN SCRIPT -->
-		<script src="js/main.js"></script>
+<!-- Wrapper 2 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" >
+	<tr>
+		<td width="100%" valign="top" bgcolor="#323a45"style="background-color: rgb(50, 58, 69); ">
 		
-		<!-- REVOSLIDER SCRIPTS  -->
-    <script src="revo-slider/js/jquery.themepunch.tools.min.js" >
-    </script>
-    <script src="revo-slider/js/jquery.themepunch.revolution.min.js" >
-    </script>
-    
-    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
-      (Load Extensions only on Local File Systems ! 
-      The following part can be removed on Server for On Demand Loading) -->
-    <script src="revo-slider/js/extensions/revolution.extension.actions.min.js" ></script>
-    <script src="revo-slider/js/extensions/revolution.extension.carousel.min.js" ></script>
-    <script src="revo-slider/js/extensions/revolution.extension.kenburn.min.js" ></script>
-    <script src="revo-slider/js/extensions/revolution.extension.layeranimation.min.js" >
-    </script>
-    <script src="revo-slider/js/extensions/revolution.extension.migration.min.js" ></script>
-    <script src="revo-slider/js/extensions/revolution.extension.navigation.min.js" ></script>
-    <script src="revo-slider/js/extensions/revolution.extension.parallax.min.js" ></script>
-    <script src="revo-slider/js/extensions/revolution.extension.slideanims.min.js" ></script>
-    <script src="revo-slider/js/extensions/revolution.extension.video.min.js" ></script>
-      
-    <!-- SLIDER REVOLUTION INITIALIZATION  -->
-    <script>
-      jQuery(document).ready(function() {
-          
-        jQuery("#rev_slider_280_1").show().revolution({
-          sliderType: "hero",
-          jsFileLocation: "revo-slider/js/",
-          sliderLayout: "fullscreen",
-          dottedOverlay: "none",
-          delay: 9000,
-          /*navigation: {},*/
-          responsiveLevels: [1240, 1024, 778, 480],
-          visibilityLevels: [1240, 1024, 778, 480],
-          gridwidth: [1240, 1024, 778, 480],
-          gridheight: [868, 768, 960, 720],
-          lazyType: "none",
-          parallax: {
-              type: "3D",
-              origo: "slidercenter",
-              speed: 400,
-              levels: [50, 10, 8, 15, 20, 30, 35, 40, 0, 50, 47, 48, 49, 50, 51, 55],
-              type: "3D",
-              ddd_shadow: "off",
-              ddd_bgfreeze: "off",
-              ddd_overflow: "hidden",
-              ddd_layer_overflow: "visible",
-              ddd_z_correction: 65,
-          },
-          shadow: 0,
-          spinner: "off",
-          stopLoop: "on",
-          stopAfterLoops: 0,
-          stopAtSlide: 1,
-          autoHeight: "off",
-          fullScreenAutoWidth: "off",
-          fullScreenAlignForce: "off",
-          fullScreenOffsetContainer: "",
-          fullScreenOffset: "",
-          disableProgressBar: "on",
-          hideThumbsOnMobile: "off",
-          hideSliderAtLimit: 0,
-          hideCaptionAtLimit: 0,
-          hideAllCaptionAtLilmit: 0,
-          debugMode: false,
-          fallbacks: {
-            simplifyAll: "off",
-            disableFocusListener: false,
-          }
-        });
-       
-      }); /*ready*/
-    </script>
-<!-- JS end -->	
-	
-	</body>
-</html>		
+								
+			<!-- Wrapper -->
+			<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
+				<tr>
+					<td width="100%">
+						
+						<!-- Header Image -->
+						<table width="600" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullImage">
+							<tr>
+								<td width="100%" height="50"></td>
+							</tr>
+							<tr>
+								<td valign="bottom" width="100%" style="text-align: center; font-family: Helvetica, Arial, sans-serif; color: rgb(255, 255, 255); font-size: 44px; line-height: 48px; font-weight: 100; "class="textCenter" >
+									<span ><!--[if !mso]><!--><span style="font-family: 'proxima_novalight', Helvetica;"><!--<![endif]-->Reddit Bot Trump Project!<!--[if !mso]><!--></span><!--<![endif]--></span>
+								</td>
+							</tr>
+							<tr>
+								<td width="100%" height="20"></td>
+							</tr>
+							<tr>
+								<td height="auto" valign="bottom" width="100%" style="text-align: center; font-family: Helvetica, Arial, sans-serif; color: rgb(255, 255, 255); font-size: 13px; line-height: 20px; font-weight: normal; "class="textCenter" >
+									<span ><!--[if !mso]><!--><span style="font-family: 'proxima_nova_rgregular', Helvetica; font-weight: normal;"><!--<![endif]-->For CS40 with the magnificent Professor Izbicki. My bot is a "Trump" supporting bot.<!--[if !mso]><!--></span><!--<![endif]--></span>
+								</td>
+							</tr>
+							<tr>
+								<td width="100%" height="40"></td>
+							</tr>
+							<tr>
+								<td width="100%">
+									<!-- 2 buttons -->
+									<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter">
+										<tr>
+											<td width="100%">
+												<!-- Centered Buttons -->
+												<table border="0" cellpadding="0" cellspacing="0" align="center" style="float: center;" class="floatCenter">
+													<tr>
+														<td align="center" height="28" bgcolor="#6998a0"style="color: rgb(255, 255, 255); font-family: Helvetica, Arial, sans-serif; font-size: 13px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-color: rgb(105, 152, 160); vertical-align: middle;" class="buttonPad" ><!--[if !mso]><!--><span style="font-family: 'proxima_nova_rgregular', Helvetica;"><!--<![endif]--><a href="https://github.com/mikeizbicki/cmc-csci040/" style="color: rgb(255, 255, 255); font-size: 13px; text-decoration: none; line-height: 20px; width:100%; padding-top: 5px; padding-bottom: 5px; "class="hover"  ><span class="erase">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Learn more about CS40<span class="erase">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a><!--[if !mso]><!--></span><!--<![endif]-->
+														</td>	
+													
+														<td width="20"></td>
+														
+														<td align="center" height="28" bgcolor="#fe5d55"style="color: rgb(255, 255, 255); font-family: Helvetica, Arial, sans-serif; font-size: 13px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-color: rgb(254, 93, 85); vertical-align: middle;" class="buttonPad" >
+														<!--[if !mso]><!--><span style="font-family: 'proxima_nova_rgregular', Helvetica;"><!--<![endif]--><a href="https://www.reddit.com/r/csci040/" style="color: rgb(255, 255, 255); font-size: 13px; text-decoration: none; line-height: 20px; width:100%; padding-top: 5px; padding-bottom: 5px; "class="hover"  ><span class="erase">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Link to our reddit test area<span class="erase">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a><!--[if !mso]><!--></span><!--<![endif]-->
+														</td> 
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td width="100%" height="60"></td>
+							</tr>
+							<tr>
+								<td height="auto" width="600" valign="bottom" style="line-height: 1px; text-align: center;" >
+									<a href="#" style="text-decoration: none; color: #ffffff; font-family: Helvetica, Arial, sans-serif; font-size: 20px;"><img width="600" height="auto" src="" alt="" border="0" style="display: block; font-size: 20px; height: auto;" ></a>							
+								</td>
+							</tr>
+							<tr>
+								<td width="100%" height="0"></td>
+							</tr>
+						</table>
+						
+					</td>
+				</tr>
+			</table><!-- End Wrapper -->
+		
+		
+		</td>
+	</tr>
+</table><!-- Wrapper 2 -->
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" >
+	<tr>
+		<td width="100%" valign="top" bgcolor="#323a45"style="background-color: rgb(150, 158, 69); ">
+		
+								
+			<!-- Wrapper -->
+			<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
+				<tr>
+					<td width="100%">
+						
+						<!-- Header Image -->
+						<table width="600" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullImage">
+							<tr>
+								<td width="100%" height="50"></td>
+							</tr>
+							<tr>
+								<td valign="bottom" width="100%" style="text-align: center; font-family: Helvetica, Arial, sans-serif; color: rgb(255, 255, 255); font-size: 44px; line-height: 48px; font-weight: 100; "class="textCenter" >
+									<span ><!--[if !mso]><!--><span style="font-family: 'proxima_novalight', Helvetica;"><!--<![endif]-->Score: 97/100 points<!--[if !mso]><!--></span><!--<![endif]--></span>
+								</td>
+							</tr>
+							<tr>
+								<td width="100%" height="20"></td>
+							</tr>
+							<tr>
+								<td height="auto" valign="bottom" width="100%" style="text-align: center; font-family: Helvetica, Arial, sans-serif; color: rgb(255, 255, 255); font-size: 16px; line-height: 20px; font-weight: normal; "class="textCenter" >
+									<span ><!--[if !mso]><!--><span style="font-family: 'proxima_nova_rgregular', Helvetica; font-weight: normal;"><!--<![endif]-->I successfully completed the following tasks. I would have completed more but I have the flu and have very little energy. 😥 I also removed my password, as required!<ul style = "text-align:left;">
+										<li>Task 1: Submission variable points to correct thread. ✅</li>
+										<li>Task 2: Bot gets list of all comments in submission ✅</li>
+										<li>Task 3: Bot filters all comments to remove comments generated by my bot ✅</li>
+										<li>Task 4: Bot filters list to remove comments bot replied to already ✅</li>
+										<li>Task 5: Bot randomly selects non-responded comment. ✅</li>
+										<li>Task 6: Bot randomly generates text using earlier technique learned. ✅</li>
+										<li>Task 7: Bot replies to selected comment. ✅</li>
+										<li>Task 8: Bot checks all submissions and comments if not in it. Code works, but needs time to fully run. In Extracredit.py file. therefore I think a 7/10 points is fair here. ✅</li>
+										<li>Extra Credit 1 (5 points): Upvote all comments containing "Trump" ✅</li>
+										<li>Extra Credit 2 (5 points): 200 comments posted ✅</li>
+
+
+
+
+									</ol><!--[if !mso]><!--></span><!--<![endif]--></span>
+								</td>
+							</tr>
+							<tr>
+								<td width="100%" height="40"></td>
+							</tr>
+							
+							<tr>
+								<td width="100%" height="60"></td>
+							</tr>
+							
+						</table>
+						
+					</td>
+				</tr>
+			</table><!-- End Wrapper -->
+		
+		
+		</td>
+	</tr>
+</table><!-- Wrapper 2 -->
+
+<!-- Wrapper 3 -->
+
+
+<!-- Wrapper 15 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" >
+	<tr>
+		<td width="100%" valign="top" bgcolor="#ffffff">
+		
+			
+			<!-- Wrapper -->
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile">
+				<tr>
+					<td>
+						
+						<!-- Wrapper -->
+						<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
+							<tr>
+								<td width="100%">
+									
+									<!-- Big Image 1 600px -->
+									<table width="600" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="bigImage">
+										<tr>
+											<td width="100%" height="70"></td>
+										</tr>
+										<tr>
+											<td width="100%" class="fullCenter" style="text-align: center;"><a href="#" style="text-decoration: none;" ><img src="https://raw.githubusercontent.com/studentsimon/studentsimon.github.io/master/Screen%20Shot%202019-12-02%20at%208.04.44%20PM.png" width="600" height="auto" style="width: 600px; height: auto; border-radius: 5px;" alt="" border="0"  class="hover"></a>
+											</td>
+										</tr>
+										<tr>
+											<td width="100%" height="30"></td>
+										</tr>
+										<tr>
+											<td width="100%" style="font-size: 26px; color: rgb(50, 58, 69); text-align: left; font-family: Helvetica, Arial, sans-serif; line-height: 32px; vertical-align: top; font-weight: 100; ">	
+												<!--[if !mso]><!--><span style="font-family: 'proxima_novalight', Helvetica;"><!--<![endif]-->Funny Bot Thread!<!--[if !mso]><!--></span><!--<![endif]-->
+											</td>
+										</tr>
+										<tr>
+											<td width="100%" height="25"></td>
+										</tr>
+										<tr>
+											<td width="100%" style="font-size: 19px; color: rgb(141, 148, 153); text-align: left; font-family: Helvetica, Arial, sans-serif; line-height: 22px; vertical-align: top; font-weight: normal; ">	
+												<!--[if !mso]><!--><span style="font-family: 'proxima_nova_rgregular', Helvetica;"><!--<![endif]-->My bot, "FlakyJob" is an annoying pro-trump bot that is an expert and getting in people's discussions and shutting them down. For instance, in this discussion bot VROMERO23 says Bernie Sanders is a person, which is hard to deny. Then LDHILLON21 comes in with a stabbing Mitch McConnel statement, but FlakyJob ends the conversation with a rational supporting comment to say why Trump is fit for office. Here is a link to the <a href = "https://www.reddit.com/r/csci040/comments/dw53wt/political_discussion_thread/f9ipfvy/?context=3">thread.</a></a> <!--[if !mso]><!--></span><!--<![endif]-->
+								
+											</td>
+										</tr>
+										<tr>
+											<td width="100%" height="40"></td>
+										</tr>
+										<!-- Button -->
+										
+										<tr>
+											<td width="100%" height="8"></td>
+										</tr>
+									</table>
+									
+								</td>
+							</tr>
+						</table><!-- End Wrapper 2 -->
+						
+						<!-- Space -->
+						<table width="100%" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="full">
+							<tr>
+								<td width="100%" height="50"></td>
+							</tr>
+						</table><!-- End Space -->
+						
+					</td>
+				</tr>
+			</table><!-- End Wrapper -->
+		
+		
+		</td>
+	</tr>
+</table><!-- Wrapper 15 -->
+
+<!-- Wrapper 16 -->
+
+	<style>body{ background: none !important; } </style>
